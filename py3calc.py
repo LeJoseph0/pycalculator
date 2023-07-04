@@ -1,8 +1,13 @@
 while True:  
   # input first number
-  
-  first_number = float(input("enter first number: "))
-  
+  while True:
+    try:
+      first_number = float(input("enter first number: "))
+      break
+    except ValueError: 
+      print("invalid input, enter a number.")
+
+
   # input operation type
   operation = input("enter operation type: ")
   
