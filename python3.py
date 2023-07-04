@@ -1,15 +1,13 @@
 while True:  
   # input first number
-try:
-first_number = float(input("enter first number: "))
-except ValueError:
-print("invalid input. please enter a number.")
+  
+  first_number = float(input("enter first number: "))
   
   # input operation type
-operation = input("enter operation type: ")
+  operation = input("enter operation type: ")
   
   # input second number
-second_number = float(input("enter second number: "))
+  second_number = float(input("enter second number: "))
   
   # print the result
   
@@ -27,4 +25,6 @@ second_number = float(input("enter second number: "))
   repeat = input("do you want to preforme another operation? (y/n): ")
   if repeat == "n":
     break
+
 print("calculator closed..")
+
