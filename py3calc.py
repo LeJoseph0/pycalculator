@@ -8,7 +8,15 @@ while True:
             print("invalid input, enter a numeric value")
 
     # input operation type
-    operation = input("enter operation type: ")
+    while True:
+      try:
+        operation = input("enter operation type: ")
+        if operation in ("+", "-", "/", "*"):
+          break
+        else:
+          raise ValueError
+      except ValueError:
+          print("invalid operator, please use +,-,/,*")
 
     # input second number
     while True:
@@ -29,7 +37,12 @@ while True:
     elif operation == "*":
         result = first_number * second_number
     else:
-        print("error")
+        result = None
+
+    if result != None:
+        print("result is:", result)
+    else:
+        print("unexpected error.")
 
     repeat = input("do you want to preforme another operation? (y/n): ")
     if repeat == "n":
