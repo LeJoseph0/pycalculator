@@ -21,13 +21,13 @@ while True:
     # print the result
 
     if operation == "+":
-        print(first_number + second_number)
+        result = first_number + second_number
     elif operation == "-":
-        print(first_number - second_number)
+        result = first_number - second_number
     elif operation == "/":
-        print(first_number / second_number)
+        result = first_number / second_number
     elif operation == "*":
-        print(first_number * second_number)
+        result = first_number * second_number
     else:
         print("error")
 
